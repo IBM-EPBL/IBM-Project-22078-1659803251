@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form action="{{url_for('login')}}" method="POST">
+                <input name="name" type="text" placeholder="name" />
+                <input name="email" type="email" placeholder="email" />
+                <input name="phone" type="tel" placeholder="phone" />
+                <button>create</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
